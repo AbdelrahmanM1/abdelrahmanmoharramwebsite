@@ -162,7 +162,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-500 dark:text-gray-400">Discord</p>
-                  <p className="text-gray-900 dark:text-white font-medium text-base sm:text-lg">3bdabk</p>
+                  <p className="text-gray-900 dark:text-white font-medium text-base sm:text-lg">3bdoabk</p>
                 </div>
               </div>
             </div>
