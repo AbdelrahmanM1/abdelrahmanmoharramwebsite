@@ -9,25 +9,27 @@ export default function Home() {
     <main className="min-h-screen">
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center justify-center px-2 sm:px-4 py-12 sm:py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-white dark:from-blue-950/50 dark:to-slate-900 -z-10" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-500/10 via-transparent to-transparent -z-10" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,_var(--tw-gradient-stops))] from-purple-500/10 via-transparent to-transparent -z-10" />
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 via-purple-50/30 to-white dark:from-blue-950/50 dark:via-purple-950/30 dark:to-slate-900 -z-10" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-500/20 via-transparent to-transparent -z-10 animate-pulse" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,_var(--tw-gradient-stops))] from-purple-500/20 via-transparent to-transparent -z-10 animate-pulse [animation-delay:1s]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,_var(--tw-gradient-stops))] from-pink-500/20 via-transparent to-transparent -z-10 animate-pulse [animation-delay:2s]" />
         <div className="max-w-2xl sm:max-w-3xl md:max-w-4xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
             className="relative"
           >
-            <div className="absolute -top-10 -left-10 sm:-top-20 sm:-left-20 w-20 h-20 sm:w-40 sm:h-40 bg-blue-500/10 rounded-full blur-3xl" />
-            <div className="absolute -bottom-10 -right-10 sm:-bottom-20 sm:-right-20 w-20 h-20 sm:w-40 sm:h-40 bg-purple-500/10 rounded-full blur-3xl" />
+            <div className="absolute -top-10 -left-10 sm:-top-20 sm:-left-20 w-20 h-20 sm:w-40 sm:h-40 bg-blue-500/10 rounded-full blur-3xl animate-pulse" />
+            <div className="absolute -bottom-10 -right-10 sm:-bottom-20 sm:-right-20 w-20 h-20 sm:w-40 sm:h-40 bg-purple-500/10 rounded-full blur-3xl animate-pulse [animation-delay:1s]" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 sm:w-60 sm:h-60 bg-pink-500/5 rounded-full blur-3xl animate-pulse [animation-delay:2s]" />
             <motion.div
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
+              transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
               className="mb-6 sm:mb-8"
             >
-              <div className="inline-flex items-center justify-center p-2 bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900/30 dark:to-purple-900/30 rounded-full mb-4">
+              <div className="inline-flex items-center justify-center p-3 bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 dark:from-blue-900/30 dark:via-purple-900/30 dark:to-pink-900/30 rounded-full mb-4 shadow-lg">
                 <CodeBracketIcon className="h-6 w-6 text-blue-600 dark:text-blue-400" />
               </div>
             </motion.div>
@@ -84,6 +86,20 @@ export default function Home() {
                 <span className="relative flex items-center text-white font-bold text-lg">
                   Get Started
                   <RocketLaunchIcon className="h-5 w-5 ml-2 text-white drop-shadow group-hover:scale-110 transition-transform" />
+                </span>
+              </Link>
+              <Link
+                href="https://drive.google.com/file/d/1pdHQEHHiIScH_PJu7wn41YCkZ6Y96Neq/view?usp=sharing"
+                download
+                target="_blank"
+                rel="noopener"
+                className="group relative inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 font-semibold tracking-wide text-white shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-purple-400/50 rounded-xl animate-pulse hover:animate-none"
+              >
+                <span className="absolute inset-0 w-full h-full transition duration-300 ease-out transform translate-x-1 translate-y-1 bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 group-hover:brightness-110 group-hover:-translate-x-0 group-hover:-translate-y-0 rounded-xl"></span>
+                <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-purple-700 via-pink-600 to-red-600 border-2 border-purple-500 group-hover:bg-gradient-to-r group-hover:from-purple-600 group-hover:via-pink-500 group-hover:to-red-500 rounded-xl"></span>
+                <span className="relative flex items-center font-bold text-lg">
+                  Download CV
+                  <SparklesIcon className="h-5 w-5 ml-2 text-white drop-shadow group-hover:scale-110 group-hover:rotate-12 transition-all duration-300" />
                 </span>
               </Link>
             </motion.div>
