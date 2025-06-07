@@ -97,7 +97,7 @@ export default function ContactPage() {
       console.error('Error sending email:', error);
       setStatus({
         type: 'error',
-        message: 'Failed to send message. Please try again later or contact me directly at alex.johnson@example.com'
+        message: 'Failed to send message. Please try again later or contact me directly at abdelrahmanmoharram.dev@gmail.com'
       });
     } finally {
       setLoading(false);
