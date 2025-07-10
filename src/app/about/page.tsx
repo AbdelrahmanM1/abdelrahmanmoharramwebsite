@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { color, motion } from "framer-motion";
 import { DiVisualstudio } from "react-icons/di";
+import { FaJava } from "react-icons/fa"; // from Font Awesome set
 import { 
   SiReact, 
   SiNextdotjs, 
@@ -22,9 +23,10 @@ import {
   SiFigma,
   SiPostman,
   SiLinux
-} from "react-icons/si";
+} 
+from "react-icons/si";
 import { FaServer, FaRocket, FaTools } from "react-icons/fa";
-
+import { SiDiscord} from "react-icons/si"; 
 const frontendSkills = [
   { name: "React.js", icon: SiReact, color: "text-blue-600 dark:text-blue-400" },
   { name: "Next.js", icon: SiNextdotjs, color: "text-blue-700 dark:text-blue-500" },
@@ -59,7 +61,13 @@ const tools = [
   { name: "Figma", icon: SiFigma, color: "text-purple-600 dark:text-purple-400" },
   { name: "Postman", icon: SiPostman, color: "text-orange-600 dark:text-orange-400" },
   { name: "Linux", icon: SiLinux, color: "text-green-600 dark:text-green-400" },
+  { name: "Discord.js", icon: SiDiscord, color: "text-blue-600 dark:text-blue-400" },
 ];
+
+const Minecraft_development = [
+  { name: "Java", icon: FaJava, color: "text-blue-600 dark:text-blue-400" },
+  { name: "Mod Development", icon: FaTools, color: "text-orange-600 dark:text-orange-400" },
+]
 
 type SkillsProgressSectionProps = {
   title: string;
@@ -112,6 +120,7 @@ export default function AboutPage() {
         <SkillsProgressSection title="Front-end Skills" skills={frontendSkills} />
         <SkillsProgressSection title="Back-end Skills" skills={backendSkills} />
         <SkillsProgressSection title="Full Stack Skills" skills={fullStackSkills} />
+        <SkillsProgressSection title="Minecraft Development" skills={Minecraft_development} />
         <SkillsProgressSection title="Tools" skills={tools} />
       </motion.div>
     </main>
