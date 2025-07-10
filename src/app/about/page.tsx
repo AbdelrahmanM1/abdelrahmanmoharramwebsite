@@ -26,24 +26,24 @@ import {
 import { FaServer, FaRocket, FaTools } from "react-icons/fa";
 
 const frontendSkills = [
-  { name: "React.js", icon: SiReact, color: "from-blue-400 to-blue-600", level: 92 },
-  { name: "Next.js", icon: SiNextdotjs, color: "from-gray-700 to-black", level: 88 },
-  { name: "HTML5", icon: SiHtml5, color: "from-orange-400 to-pink-500", level: 95 },
-  { name: "CSS3", icon: SiCss3, color: "from-blue-500 to-blue-800", level: 93 },
-  { name: "Tailwind CSS", icon: SiTailwindcss, color: "from-cyan-400 to-blue-500", level: 90 },
-  { name: "JavaScript", icon: SiJavascript, color: "from-yellow-400 to-yellow-600", level: 94 },
-  { name: "TypeScript", icon: SiTypescript, color: "from-blue-400 to-blue-700", level: 85 },
+  { name: "React.js", icon: SiReact},
+  { name: "Next.js", icon: SiNextdotjs },
+  { name: "HTML5", icon: SiHtml5 },
+  { name: "CSS3", icon: SiCss3 },
+  { name: "Tailwind CSS", icon: SiTailwindcss },
+  { name: "JavaScript", icon: SiJavascript },
+  { name: "TypeScript", icon: SiTypescript },
 ];
 
 const backendSkills = [
-  { name: "Node.js", icon: SiNodedotjs, color: "from-green-400 to-green-700", level: 90 },
-  { name: "Express.js", icon: SiExpress, color: "from-gray-700 to-gray-900", level: 87 },
-  { name: "MongoDB", icon: SiMongodb, color: "from-green-500 to-green-800", level: 85 },
-  { name: "PostgreSQL", icon: SiPostgresql, color: "from-blue-500 to-blue-900", level: 80 },
-  { name: "REST APIs", icon: FaServer, color: "from-indigo-400 to-indigo-700", level: 92 },
-  { name: "Socket.io", icon: SiSocketdotio, color: "from-pink-500 to-purple-700", level: 78 },
-  { name: "SQLite", icon: SiSqlite, color: "from-green-500 to-blue-700", level: 78 },
-  { name: "Python", icon: SiPython, color: "from-yellow-500 to-blue-700", level: 80 },
+  { name: "Node.js", icon: SiNodedotjs },
+  { name: "Express.js", icon: SiExpress},
+  { name: "MongoDB", icon: SiMongodb},
+  { name: "PostgreSQL", icon: SiPostgresql },
+  { name: "REST APIs", icon: FaServer },
+  { name: "Socket.io", icon: SiSocketdotio },
+  { name: "SQLite", icon: SiSqlite },
+  { name: "Python", icon: SiPython },
 ];
 
 const fullStackSkills = [
@@ -54,11 +54,11 @@ const fullStackSkills = [
 ];
 
 const tools = [
-  { name: "VS Code", icon: DiVisualstudio, color: "from-blue-500 to-indigo-700", level: 98 },
-  { name: "Git & GitHub", icon: SiGithub, color: "from-gray-700 to-black", level: 95 },
-  { name: "Figma", icon: SiFigma, color: "from-pink-500 to-yellow-500", level: 80 },
-  { name: "Postman", icon: SiPostman, color: "from-orange-400 to-pink-500", level: 85 },
-  { name: "Linux", icon: SiLinux, color: "from-gray-700 to-gray-900", level: 75 },
+  { name: "VS Code", icon: DiVisualstudio },
+  { name: "Git & GitHub", icon: SiGithub},
+  { name: "Figma", icon: SiFigma },
+  { name: "Postman", icon: SiPostman },
+  { name: "Linux", icon: SiLinux },
 ];
 
 type SkillsProgressSectionProps = {
@@ -108,12 +108,6 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-
-        {/* Skills Progress Sections */}
-        <SkillsProgressSection title="Front-end Skills" skills={frontendSkills} />
-        <SkillsProgressSection title="Back-end Skills" skills={backendSkills} />
-        <SkillsProgressSection title="Full Stack Skills" skills={fullStackSkills} />
-        <SkillsProgressSection title="Tools" skills={tools} />
       </motion.div>
     </main>
   );

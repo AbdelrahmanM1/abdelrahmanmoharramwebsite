@@ -45,6 +45,11 @@ const faqs = [
       answer: "My discord username is 3bdoabk.",
       category: "General"
     },
+    {
+      question: "What is your experience in web development?",
+      answer: "I have over 4 years of experience in web development, specializing in full-stack applications.",
+      category: "Development"
+    }, 
 ];
 
 export default function FAQPage() {
