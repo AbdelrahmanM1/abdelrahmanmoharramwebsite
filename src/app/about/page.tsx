@@ -65,7 +65,7 @@ const tools = [
 ];
 
 const Minecraft_development = [
-  { name: "Java", icon: FaJava, color: "text-blue-600 dark:text-blue-400" },
+  { name: "Java", icon: FaJava, color: "text-yellow-600 dark:text-yellow-400" },
   { name: "Mod Development", icon: FaTools, color: "text-orange-600 dark:text-orange-400" },
 ]
 
