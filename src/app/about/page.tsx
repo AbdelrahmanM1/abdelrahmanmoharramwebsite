@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { color, motion } from "framer-motion";
 import { DiVisualstudio } from "react-icons/di";
 import { 
   SiReact, 
@@ -26,39 +26,39 @@ import {
 import { FaServer, FaRocket, FaTools } from "react-icons/fa";
 
 const frontendSkills = [
-  { name: "React.js", icon: SiReact},
-  { name: "Next.js", icon: SiNextdotjs },
-  { name: "HTML5", icon: SiHtml5 },
-  { name: "CSS3", icon: SiCss3 },
-  { name: "Tailwind CSS", icon: SiTailwindcss },
-  { name: "JavaScript", icon: SiJavascript },
-  { name: "TypeScript", icon: SiTypescript },
+  { name: "React.js", icon: SiReact, color: "text-blue-600 dark:text-blue-400" },
+  { name: "Next.js", icon: SiNextdotjs, color: "text-blue-700 dark:text-blue-500" },
+  { name: "HTML5", icon: SiHtml5, color: "text-orange-600 dark:text-orange-400" },
+  { name: "CSS3", icon: SiCss3, color: "text-blue-500 dark:text-blue-300" },
+  { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-cyan-400 dark:text-cyan-300" },
+  { name: "JavaScript", icon: SiJavascript, color: "text-yellow-500 dark:text-yellow-400" },
+  { name: "TypeScript", icon: SiTypescript, color: "text-blue-600 dark:text-blue-400" },
 ];
 
 const backendSkills = [
-  { name: "Node.js", icon: SiNodedotjs },
-  { name: "Express.js", icon: SiExpress},
-  { name: "MongoDB", icon: SiMongodb},
-  { name: "PostgreSQL", icon: SiPostgresql },
-  { name: "REST APIs", icon: FaServer },
-  { name: "Socket.io", icon: SiSocketdotio },
-  { name: "SQLite", icon: SiSqlite },
-  { name: "Python", icon: SiPython },
+  { name: "Node.js", icon: SiNodedotjs, color: "text-green-600 dark:text-green-400" },
+  { name: "Express.js", icon: SiExpress, color: "text-gray-700 dark:text-gray-300" },
+  { name: "MongoDB", icon: SiMongodb, color: "text-green-700 dark:text-green-500" },
+  { name: "PostgreSQL", icon: SiPostgresql, color: "text-blue-600 dark:text-blue-400" },
+  { name: "REST APIs", icon: FaServer, color: "text-purple-600 dark:text-purple-400" },
+  { name: "Socket.io", icon: SiSocketdotio, color: "text-green-600 dark:text-green-400" },
+  { name: "SQLite", icon: SiSqlite, color: "text-blue-600 dark:text-blue-400" },
+  { name: "Python", icon: SiPython, color: "text-blue-600 dark:text-blue-400" },
 ];
 
 const fullStackSkills = [
-  { name: "Full Stack Apps", icon: FaRocket},
-  { name: "Authentication", icon: FaServer},
-  { name: "API Integration", icon: FaServer},
-  { name: "Deployment", icon: FaRocket},
+  { name: "Full Stack Apps", icon: FaRocket, color: "text-indigo-600 dark:text-indigo-400" },
+  { name: "Authentication", icon: FaServer, color: "text-purple-600 dark:text-purple-400" },
+  { name: "API Integration", icon: FaServer, color: "text-purple-600 dark:text-purple-400" },
+  { name: "Deployment", icon: FaRocket, color: "text-indigo-600 dark:text-indigo-400" },
 ];
 
 const tools = [
-  { name: "VS Code", icon: DiVisualstudio },
-  { name: "Git & GitHub", icon: SiGithub},
-  { name: "Figma", icon: SiFigma },
-  { name: "Postman", icon: SiPostman },
-  { name: "Linux", icon: SiLinux },
+  { name: "VS Code", icon: DiVisualstudio, color: "text-blue-600 dark:text-blue-400" },
+  { name: "Git & GitHub", icon: SiGithub, color: "text-gray-700 dark:text-gray-300" },
+  { name: "Figma", icon: SiFigma, color: "text-purple-600 dark:text-purple-400" },
+  { name: "Postman", icon: SiPostman, color: "text-orange-600 dark:text-orange-400" },
+  { name: "Linux", icon: SiLinux, color: "text-green-600 dark:text-green-400" },
 ];
 
 type SkillsProgressSectionProps = {
@@ -66,6 +66,7 @@ type SkillsProgressSectionProps = {
   skills: {
     name: string;
     icon: React.ElementType;
+    color: string;
   }[];
 };
 
@@ -130,16 +131,18 @@ function SkillsProgressSection({ title, skills }: SkillsProgressSectionProps) {
         {title}
       </h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-        {skills.map(({ name, icon: Icon }) => (
-          <div
+        {skills.map(({ name, icon: Icon, color }) => (
+          <motion.div
             key={name}
-            className="flex flex-col items-center bg-white dark:bg-slate-800 p-4 rounded-xl shadow-md hover:shadow-lg transition duration-300"
+            whileHover={{ scale: 1.05, rotate: 1 }}
+            transition={{ type: "spring", stiffness: 300 }}
+            className="flex flex-col items-center bg-white dark:bg-slate-800 p-4 rounded-xl shadow-md hover:shadow-xl transition duration-300 hover:bg-slate-100 dark:hover:bg-slate-700"
           >
-            <Icon className="h-8 w-8 text-blue-600 dark:text-blue-400 mb-2" />
+            <Icon className={`h-8 w-8 mb-2 ${color} transition-colors duration-300`} />
             <span className="text-sm text-center text-gray-800 dark:text-gray-100 font-medium">
               {name}
             </span>
-          </div>
+          </motion.div>
         ))}
       </div>
     </motion.section>
