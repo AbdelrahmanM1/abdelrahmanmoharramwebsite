@@ -47,10 +47,10 @@ const backendSkills = [
 ];
 
 const fullStackSkills = [
-  { name: "Full Stack Apps", icon: FaRocket, color: "from-purple-500 to-blue-700"},
-  { name: "Authentication", icon: FaServer, color: "from-blue-500 to-purple-700"},
-  { name: "API Integration", icon: FaServer, color: "from-green-400 to-blue-600"},
-  { name: "Deployment", icon: FaRocket, color: "from-gray-700 to-black"},
+  { name: "Full Stack Apps", icon: FaRocket},
+  { name: "Authentication", icon: FaServer},
+  { name: "API Integration", icon: FaServer},
+  { name: "Deployment", icon: FaRocket},
 ];
 
 const tools = [
@@ -66,8 +66,6 @@ type SkillsProgressSectionProps = {
   skills: {
     name: string;
     icon: React.ElementType;
-    color: string;
-    level: number;
   }[];
 };
 
@@ -131,30 +129,19 @@ function SkillsProgressSection({ title, skills }: SkillsProgressSectionProps) {
       <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 dark:from-blue-400 dark:via-purple-400 dark:to-blue-600">
         {title}
       </h2>
-      <div className="space-y-5 sm:space-y-6">
-        {skills.map(({ name, icon: Icon, color, level }) => (
-          <div key={name} className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
-            <span className={`p-2 sm:p-3 rounded-full bg-gradient-to-r ${color} text-white shadow-lg`}>
-              <Icon className="h-6 w-6 sm:h-7 sm:w-7" />
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+        {skills.map(({ name, icon: Icon }) => (
+          <div
+            key={name}
+            className="flex flex-col items-center bg-white dark:bg-slate-800 p-4 rounded-xl shadow-md hover:shadow-lg transition duration-300"
+          >
+            <Icon className="h-8 w-8 text-blue-600 dark:text-blue-400 mb-2" />
+            <span className="text-sm text-center text-gray-800 dark:text-gray-100 font-medium">
+              {name}
             </span>
-            <div className="flex-1 w-full">
-              <div className="flex flex-col sm:flex-row sm:justify-between mb-1">
-                <span className="font-semibold text-gray-800 dark:text-gray-100 text-base sm:text-lg">{name}</span>
-                <span className="text-blue-600 dark:text-blue-400 font-semibold text-sm sm:text-base">{level}%</span>
-              </div>
-              <div className="h-2 sm:h-3 bg-gray-200 dark:bg-slate-700 rounded-full overflow-hidden">
-                <motion.div
-                  className={`h-full bg-gradient-to-r ${color} rounded-full shadow-md`}
-                  initial={{ width: 0 }}
-                  whileInView={{ width: `${level}%` }}
-                  transition={{ duration: 1 }}
-                  viewport={{ once: true }}
-                />
-              </div>
-            </div>
           </div>
         ))}
       </div>
     </motion.section>
   );
-} 
+}
