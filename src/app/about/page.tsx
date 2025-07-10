@@ -47,10 +47,10 @@ const backendSkills = [
 ];
 
 const fullStackSkills = [
-  { name: "Full Stack Apps", icon: FaRocket, color: "from-purple-500 to-blue-700", level: 90 },
-  { name: "Authentication", icon: FaServer, color: "from-blue-500 to-purple-700", level: 85 },
-  { name: "API Integration", icon: FaServer, color: "from-green-400 to-blue-600", level: 88 },
-  { name: "Deployment", icon: FaRocket, color: "from-gray-700 to-black", level: 80 },
+  { name: "Full Stack Apps", icon: FaRocket, color: "from-purple-500 to-blue-700"},
+  { name: "Authentication", icon: FaServer, color: "from-blue-500 to-purple-700"},
+  { name: "API Integration", icon: FaServer, color: "from-green-400 to-blue-600"},
+  { name: "Deployment", icon: FaRocket, color: "from-gray-700 to-black"},
 ];
 
 const tools = [
@@ -108,6 +108,12 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
+
+        {/* Skills Progress Sections */}
+        <SkillsProgressSection title="Front-end Skills" skills={frontendSkills} />
+        <SkillsProgressSection title="Back-end Skills" skills={backendSkills} />
+        <SkillsProgressSection title="Full Stack Skills" skills={fullStackSkills} />
+        <SkillsProgressSection title="Tools" skills={tools} />
       </motion.div>
     </main>
   );
