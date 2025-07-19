@@ -57,7 +57,7 @@ const projects = [
   {
     title: "CodeBridge - Learning Platform",
     description: "A landing page for a revolutionary AI-powered learning platform that aims to make programming accessible to everyone, including learners who are blind, deaf, or have learning difficulties. Our mission is to ensure no one is left behind in the world of technology.",
-    link: "https://github.com/AbdelrahmanM1/CodeBridge",
+    link: "https://abdelrahmanm1.github.io/codebridge/",
     skills: ["HTML", "TailwindCSS", "JavaScript"],
     gradient: "from-green-500 to-lime-600",
     icon: "📚"
