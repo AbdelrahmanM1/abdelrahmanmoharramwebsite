@@ -37,13 +37,13 @@ export default function Navbar() {
     >
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-            <div className="flex h-16 items-center justify-between rounded-full px-4 bg-white/60 dark:bg-slate-800/60 backdrop-blur-md shadow-md mt-2 transition-all">
+          <div className="mx-auto max-w-6xl px-2 sm:px-4 lg:px-8">
+            <div className="flex h-16 items-center justify-between rounded-full px-2 sm:px-4 bg-white/60 dark:bg-slate-800/60 backdrop-blur-md shadow-md mt-2 transition-all">
               {/* Logo */}
               <div className="flex-shrink-0">
                 <Link href="/" className="flex items-center space-x-2">
                   <motion.span
-                    className="font-bold text-lg sm:text-xl bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-800 dark:from-blue-400 dark:to-blue-600"
+                    className="font-bold text-base xs:text-lg sm:text-xl bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-800 dark:from-blue-400 dark:to-blue-600"
                     whileHover={{ scale: 1.05 }}
                     transition={{ type: "spring", stiffness: 300, damping: 10 }}
                   >
@@ -53,12 +53,12 @@ export default function Navbar() {
               </div>
 
               {/* Desktop Menu */}
-              <div className="hidden md:flex items-center space-x-6">
+              <div className="hidden md:flex items-center space-x-2 sm:space-x-4 lg:space-x-6">
                 {navigation.map((item) => (
                   <Link
                     key={item.name}
                     href={item.href}
-                    className="relative text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-full text-sm font-medium transition-colors group"
+                    className="relative text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-2 sm:px-3 py-2 rounded-full text-sm font-medium transition-colors group"
                   >
                     {item.name}
                     <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-600 dark:bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
@@ -82,12 +82,12 @@ export default function Navbar() {
 
           {/* Mobile Menu */}
           <Disclosure.Panel className="md:hidden">
-            <div className="space-y-1 px-4 pt-4 pb-4 mx-4 mt-2 rounded-2xl bg-white dark:bg-slate-900 shadow-lg">
+            <div className="space-y-1 px-2 pt-4 pb-4 mx-2 sm:mx-4 mt-2 rounded-2xl bg-white dark:bg-slate-900 shadow-lg">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="block px-4 py-2 rounded-full text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-base font-medium transition-colors"
+                  className="block px-4 py-3 rounded-full text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-base font-medium transition-colors text-center"
                 >
                   {item.name}
                 </Link>
