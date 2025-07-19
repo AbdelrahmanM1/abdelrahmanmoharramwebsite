@@ -29,7 +29,7 @@ export default function Navbar() {
   return (
     <Disclosure
       as="nav"
-      className={`fixed w-full z-50 transition-all duration-300 ${
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         scrolled
           ? "bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-lg"
           : "bg-transparent"
@@ -37,8 +37,8 @@ export default function Navbar() {
     >
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-6xl px-2 sm:px-4 lg:px-8">
-            <div className="flex h-16 items-center justify-between rounded-full px-2 sm:px-4 bg-white/60 dark:bg-slate-800/60 backdrop-blur-md shadow-md mt-2 transition-all">
+          <div className="mx-auto max-w-6xl w-full px-3 sm:px-4 lg:px-8">
+            <div className="flex h-16 items-center justify-between rounded-full px-3 sm:px-4 bg-white/60 dark:bg-slate-800/60 backdrop-blur-md shadow-md mt-2 transition-all">
               {/* Logo */}
               <div className="flex-shrink-0">
                 <Link href="/" className="flex items-center space-x-2">
@@ -53,7 +53,7 @@ export default function Navbar() {
               </div>
 
               {/* Desktop Menu */}
-              <div className="hidden md:flex items-center space-x-2 sm:space-x-4 lg:space-x-6">
+              <div className="hidden lg:flex items-center space-x-2 sm:space-x-4 lg:space-x-6">
                 {navigation.map((item) => (
                   <Link
                     key={item.name}
@@ -67,9 +67,13 @@ export default function Navbar() {
               </div>
 
               {/* Mobile Button */}
-              <div className="flex md:hidden">
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-full text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-600 transition">
-                  <span className="sr-only">Open main menu</span>
+              <div className="flex lg:hidden">
+                <Disclosure.Button
+                  className="inline-flex items-center justify-center p-2 rounded-full text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-600 transition"
+                  aria-label="Toggle navigation"
+                  aria-expanded={open}
+                >
+                  <span className="sr-only">Toggle navigation</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" />
                   ) : (
@@ -81,8 +85,8 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Menu */}
-          <Disclosure.Panel className="md:hidden">
-            <div className="space-y-1 px-2 pt-4 pb-4 mx-2 sm:mx-4 mt-2 rounded-2xl bg-white dark:bg-slate-900 shadow-lg">
+          <Disclosure.Panel className="lg:hidden">
+            <div className="space-y-2 px-4 pt-4 pb-6 mx-2 sm:mx-4 mt-2 rounded-2xl bg-white dark:bg-slate-900 shadow-lg">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
