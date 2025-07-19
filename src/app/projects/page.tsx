@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowTopRightOnSquareIcon, CodeBracketIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import { Description } from "@headlessui/react";
 
 const projects = [
   {
@@ -24,7 +25,7 @@ const projects = [
   {
     title: "Minecraft Mute Plugin",
     description: "A plugin for Minecraft servers that allows admins to mute players for a specified duration.",
-    link: "#",
+    link: "https://github.com/AbdelrahmanM1/Muteplugin",
     skills: ["Java", "Minecraft API", "Spigot", "SQLite"],
     gradient: "from-emerald-500 to-teal-600",
     icon: "🎮"
@@ -33,26 +34,51 @@ const projects = [
     title: "School Management System",
     description: "A web application for managing school bookings, schedules, and resources.",
     link: "#",
-    skills: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+    skills: ["HTML", "TailwindCSS", "Flask", "Python"],
     gradient: "from-blue-500 to-indigo-600",
     icon: "💻"
-  },
-  {
-    title: "Discord Community Bot",
-    description: "A feature-rich Discord bot for community management and fun.",
-    link: "#",
-    skills: ["JavaScript", "Discord.js", "Node.js"],
-    gradient: "from-violet-500 to-purple-600",
-    icon: "🤖"
   },
     {
     title: "Ai chatbot website",
     description: "A web application intergate with Google api ai I made it for fun.",
-    link: "#",
+    link: "https://github.com/AbdelrahmanM1/chatbot",
     skills: ["Html5", "css", "javascript","Python","Google api"],
     gradient: "from-violet-500 to-purple-600",
     icon: "💻"
   },
+  {
+    title: "ClearWater - Website",
+    description: "ClearWater is a campaign focused on raising awareness and taking action to protect the world's water resources from pollution.",
+    link: "https://clearwaterwebsite-production.up.railway.app",
+    skills: ["HTML", "CSS", "JavaScript"],
+    gradient: "from-blue-500 to-indigo-600",
+    icon: "💻"
+  },
+  {
+    title: "CodeBridge - Learning Platform",
+    description: "A landing page for a revolutionary AI-powered learning platform that aims to make programming accessible to everyone, including learners who are blind, deaf, or have learning difficulties. Our mission is to ensure no one is left behind in the world of technology.",
+    link: "https://github.com/AbdelrahmanM1/CodeBridge",
+    skills: ["HTML", "TailwindCSS", "JavaScript"],
+    gradient: "from-green-500 to-lime-600",
+    icon: "📚"
+  },
+  {
+    title: "ScoreboardPlugin",
+    description: "A Minecraft scoreboard plugin, similar to Hypixel's, that displays player scores and statistics in-game.",
+    skills: ["Java", "Minecraft API", "Spigot"],
+    gradient: "from-yellow-500 to-orange-600",
+    icon: "🏆",
+    link: "https://github.com/AbdelrahmanM1/ScoreboardSameHypixel"
+  }
+  ,
+  {
+    title: "Report Plugin",
+    description: "A Minecraft plugin that allows players to report rule-breakers directly in-game, making server moderation easier and more efficient.",
+    skills: ["Java", "Minecraft API", "Spigot", "Discord Webhook"],
+    gradient: "from-red-500 to-pink-600",
+    icon: "🚨",
+    link: "https://github.com/AbdelrahmanM1/report-plugin"
+  }
 ];
 
 export default function ProjectsPage() {
