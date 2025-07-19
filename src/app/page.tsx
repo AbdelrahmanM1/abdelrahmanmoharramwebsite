@@ -6,11 +6,11 @@ import { ArrowRightIcon, SparklesIcon, RocketLaunchIcon, CodeBracketIcon, Comman
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen pt-[6px]">
       {/* Hero Section */}
-      <section className="relative flex items-center justify-center min-h-screen px-2 sm:px-4 py-0 overflow-hidden">
+      <section className="relative flex items-center justify-center min-h-[calc(100vh-4.5rem)] px-2 sm:px-4 py-0 overflow-hidden bg-gradient-to-b from-transparent to-slate-50/5 dark:to-slate-900/5">
         {/* Removed background gradients behind navbar */}
-        <div className="w-full max-w-3xl mx-auto flex flex-col items-center justify-center text-center gap-6 sm:gap-8">
+        <div className="w-full max-w-3xl mx-auto flex flex-col items-center justify-center text-center gap-4 sm:gap-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
