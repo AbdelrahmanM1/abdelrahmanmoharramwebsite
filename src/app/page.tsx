@@ -6,7 +6,7 @@ import { ArrowRightIcon, SparklesIcon, RocketLaunchIcon, CodeBracketIcon, Comman
 
 export default function Home() {
   return (
-    <main className="min-h-screen pt-2">
+    <main className="min-h-screen pt-[5px]">
       {/* Hero Section */}
       <section className="relative flex items-center justify-center min-h-[60vh] px-2 sm:px-4 pt-0 pb-10 sm:pt-4 sm:pb-16 overflow-hidden">
         {/* Removed background gradients behind navbar */}
