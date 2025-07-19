@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <main className="min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center justify-center px-2 sm:px-4 py-12 sm:py-20 overflow-hidden">
+      <section className="relative flex items-center justify-center min-h-[80vh] px-2 sm:px-4 py-8 sm:py-16 overflow-hidden">
         {/* Removed background gradients behind navbar */}
-        <div className="max-w-2xl sm:max-w-3xl md:max-w-4xl mx-auto text-center">
+        <div className="w-full max-w-3xl mx-auto flex flex-col items-center justify-center text-center gap-6 sm:gap-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
