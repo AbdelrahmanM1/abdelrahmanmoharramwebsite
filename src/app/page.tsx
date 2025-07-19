@@ -6,13 +6,10 @@ import { ArrowRightIcon, SparklesIcon, RocketLaunchIcon, CodeBracketIcon, Comman
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen pt-20">
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center justify-center px-2 sm:px-4 py-12 sm:py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 via-purple-50/30 to-white dark:from-blue-950/50 dark:via-purple-950/30 dark:to-slate-900 -z-10" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-500/20 via-transparent to-transparent -z-10 animate-pulse" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,_var(--tw-gradient-stops))] from-purple-500/20 via-transparent to-transparent -z-10 animate-pulse [animation-delay:1s]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,_var(--tw-gradient-stops))] from-pink-500/20 via-transparent to-transparent -z-10 animate-pulse [animation-delay:2s]" />
+        {/* Removed background gradients behind navbar */}
         <div className="max-w-2xl sm:max-w-3xl md:max-w-4xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
