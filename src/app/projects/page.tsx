@@ -82,7 +82,7 @@ const projects = [
   {
     title: "Birthday Countdown",
     description: "A fun and interactive birthday countdown website that helps users track days until their special day with animations and celebrations.",
-    skills: ["React", "JavaScript", "CSS", "Framer Motion"],
+    skills: ["React", "JavaScript", "Tailwind CSS"],
     gradient: "from-pink-500 to-rose-600",
     icon: "🎂",
     link: "https://abdelrahmanm1.github.io/a-fun-birthday-countdown/"
