@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { ArrowTopRightOnSquareIcon, CodeBracketIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { Description } from "@headlessui/react";
+import { desc, g, i } from "framer-motion/client";
+import { link } from "fs";
 
 const projects = [
   {
@@ -86,7 +88,15 @@ const projects = [
     gradient: "from-pink-500 to-rose-600",
     icon: "🎂",
     link: "https://abdelrahmanm1.github.io/a-fun-birthday-countdown/"
-  }
+  },
+  {
+    title: "Inspirely Website",
+    description: "A personal project that showcases my skills and interests, featuring a clean design and interactive elements.",
+    skills: ["HTML", "TailwindCSS", "JavaScript"],
+    gradient: "from-purple-500 to-violet-600",
+    icon: "🌟",
+    link: "https://abdelrahmanm1.github.io/inspirary_website/"
+  },
 ];
 
 export default function ProjectsPage() {
