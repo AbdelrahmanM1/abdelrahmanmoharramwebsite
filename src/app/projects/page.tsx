@@ -83,7 +83,7 @@ const projects = [
   },
   {
     title: "Birthday Countdown",
-    description: "A fun and interactive birthday countdown website that helps users track days until their special day with animations and celebrations.",
+    description: "A fun and interactive birthday countdown website that helps users track days until my special day with animations and celebrations.",
     skills: ["HTML", "JavaScript", "Tailwind CSS"],
     gradient: "from-pink-500 to-rose-600",
     icon: "🎂",
@@ -97,6 +97,14 @@ const projects = [
     icon: "🌟",
     link: "https://abdelrahmanm1.github.io/inspirary_website/"
   },
+  {
+    title: "Asteroid Dodger",
+    description: "A interactive web game where players control a spaceship to dodge incoming asteroids and destroy it, enhancing their reflexes and hand-eye coordination.",
+    skills: ["HTML", "JavaScript", "Tailwind CSS"],
+    gradient: "from-pink-500 to-rose-600",
+    icon: "🎮",
+    link: "https://abdelrahmanm1.github.io/Asteroid-dodger/"
+  }
 ];
 
 export default function ProjectsPage() {
