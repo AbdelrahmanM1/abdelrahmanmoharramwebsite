@@ -103,7 +103,7 @@ const projects = [
     skills: ["HTML", "JavaScript", "Tailwind CSS"],
     gradient: "from-pink-500 to-rose-600",
     icon: "🎮",
-    link: "https://abdelrahmanm1.github.io/Asteroid-dodger/"
+    link: "https://abdelrahmanm1.github.io/Asteroid-Dodger"
   }
 ];
 
