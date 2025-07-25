@@ -100,10 +100,18 @@ const projects = [
   {
     title: "Asteroid Dodger",
     description: "A interactive web game where players control a spaceship to dodge incoming asteroids and destroy it, enhancing their reflexes and hand-eye coordination.",
-    skills: ["HTML", "JavaScript", "Tailwind CSS"],
+    skills: ["HTML", "JavaScript", "CSS"],
     gradient: "from-pink-500 to-rose-600",
     icon: "🎮",
     link: "https://abdelrahmanm1.github.io/Asteroid-Dodger"
+  },
+  {
+    title: "Invoice Maker -<u>Under Development</u>",
+    description: "A Web Application that allows users to create and download invoices in PDF format, making it easy to manage billing and payments and There are templates.",
+    skills: ["next.js", "TailwindCSS", "TypeScript", "Node.js"],
+    gradient: "from-blue-500 to-indigo-600",
+    icon: "🧾",
+    link: "https://abdelrahmanmoharraminvoicemaker.vercel.app"
   }
 ];
 
