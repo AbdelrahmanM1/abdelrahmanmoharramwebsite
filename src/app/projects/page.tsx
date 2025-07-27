@@ -108,7 +108,7 @@ const projects = [
   {
     title: "Invoice Maker -Under Development",
     description: "A Web Application that allows users to create and download invoices in PDF format, making it easy to manage billing and payments and There are templates.",
-    skills: ["next.js", "TailwindCSS", "TypeScript", "Node.js"],
+    skills: ["Next.js", "TailwindCSS", "TypeScript", "Node.js", "Express.js"],
     gradient: "from-blue-500 to-indigo-600",
     icon: "🧾",
     link: "https://abdelrahmanmoharraminvoicemaker.vercel.app"
