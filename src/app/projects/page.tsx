@@ -165,6 +165,8 @@ export default function ProjectsPage() {
               </div>
               <Link
                 href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group inline-flex items-center text-blue-600 dark:text-blue-400 font-medium hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
               >
                 View Project
