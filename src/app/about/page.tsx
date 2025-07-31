@@ -99,7 +99,7 @@ export default function AboutPage() {
         <div className="bg-white dark:bg-slate-800/50 rounded-2xl shadow-lg p-4 sm:p-8 hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-slate-700/50 backdrop-blur-sm">
           <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center">
             <div className="flex-1">
-              <h2 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 bg-clip-text text-transparent mb-3 sm:mb-4">Abdelrahman Moharram</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 bg-clip-text text-transparent mb-3 sm:mb-4">Abdelrahman Moharram | 15 years old</h2>
               <p className="text-base sm:text-lg text-gray-700 dark:text-gray-300 mb-3 sm:mb-4">
                 Hi! I'm a passionate Full Stack Developer with expertise in web development, Minecraft plugin creation, and Discord bot development. I love turning complex problems into simple, beautiful, and intuitive solutions.
               </p>
