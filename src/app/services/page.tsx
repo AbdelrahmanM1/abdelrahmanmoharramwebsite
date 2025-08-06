@@ -41,6 +41,17 @@ const services = [
       "API Integration"
     ]
   },
+  {
+    title: "Web design",
+    description: "I will design a beautiful and stunning website",
+    price: "$150 per one page",
+    gradient: "from-orange-500 to-purple-600",
+    features: [
+      "Wireframe",
+      "design",
+      "Full Website using Webflow if needed",
+    ]
+  },
 ];
 
 export default function ServicesPage() {

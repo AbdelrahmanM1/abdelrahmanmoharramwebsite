@@ -111,6 +111,7 @@ export default function AboutPage() {
                 <span className="px-3 py-1 sm:px-4 sm:py-2 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full text-xs sm:text-sm font-medium">Minecraft Plugin Expert</span>
                 <span className="px-3 py-1 sm:px-4 sm:py-2 bg-violet-100 dark:bg-violet-900/30 text-violet-700 dark:text-violet-300 rounded-full text-xs sm:text-sm font-medium">Discord Bot Developer</span>
                 <span className="px-3 py-1 sm:px-4 sm:py-2 bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 rounded-full text-xs sm:text-sm font-medium">Minecarft Server Developer </span>
+                <span className="px-3 py-1 sm:px-4 sm:py-2 bg-orange-100 dark:bg-orange-900/30 text-red-700 dark:text-orange-300 rounded-full text-xs sm:text-sm font-medium">Web Designer | UI/UX designer </span>
               </div>
             </div>
           </div>
