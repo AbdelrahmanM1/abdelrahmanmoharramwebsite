@@ -51,8 +51,8 @@ const projects = [
   {
     title: "ClearWater - Website",
     description: "ClearWater is a campaign focused on raising awareness and taking action to protect the world's water resources from pollution.",
-    link: "https://clearwaterwebsite-production.up.railway.app",
-    skills: ["HTML", "CSS", "JavaScript"],
+    link: "https://github.com/AbdelrahmanM1/ClearWaterWebsite",
+    skills: ["HTML", "CSS", "JavaScript", "Python", "Flask"],
     gradient: "from-blue-500 to-indigo-600",
     icon: "💻"
   },
