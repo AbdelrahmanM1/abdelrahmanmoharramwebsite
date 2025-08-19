@@ -86,7 +86,7 @@ export default function Home() {
                 </span>
               </Link>
               <Link
-                href="https://drive.google.com/file/d/1pdHQEHHiIScH_PJu7wn41YCkZ6Y96Neq/view?usp=sharing"
+                href="https://drive.google.com/file/d/1YlAGs3d7quj4umP1vJL0zAiA6idMrTMI/view?usp=sharing"
                 download
                 target="_blank"
                 rel="noopener"
